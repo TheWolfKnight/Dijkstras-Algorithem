@@ -1,0 +1,195 @@
+[
+    {
+        "name": "vejle",
+        "edges": [
+            {"source": "vejle", "dest": "skibet", "length": -7},
+            {"source": "vejle", "dest": "ny-højen", "length": 7},
+            {"source": "vejle", "dest": "jelling", "length": 12},
+            {"source": "vejle", "dest": "kolding", "length": 33},
+            {"source": "vejle", "dest": "jerlev", "length": 8}
+        ]
+    },
+    {
+        "name": "skibet",
+        "edges": [
+            {"source": "skibet", "dest": "vejle", "length": 7},
+            {"source": "skibet", "dest": "bredsten", "length": 4}
+        ]
+    },
+    {
+    	"name": "jelling",
+    	"edges": [
+    		{"source": "jelling", "dest": "vejle", "length": 12},
+    		{"source": "jelling", "dest": "gadbjerg", "length": 8},
+            {"source": "jelling", "dest": "givskud", "length": 9}
+    	]
+    },
+    {
+        "name": "bredsten",
+        "edges": [
+            {"source": "bredsten", "dest": "vandel", "length": 12},
+            {"source": "bredsten", "dest": "skibet", "length": 4},
+            {"source": "bredsten", "dest": "ny-nørup", "length": 5},
+            {"source": "bredsten", "dest": "give", "length": 20}
+        ]
+    },
+    {
+        "name": "ny-nørup",
+        "edges": [
+            {"source": "ny-nørup", "dest": "bredsten", "length": 5},
+            {"source": "ny-nørup", "dest": "vandel", "length": 6}
+        ]
+    },
+    {
+        "name": "vandel",
+        "edges": [
+            {"source": "vandel", "dest": "ny-nørup", "length": 6},
+            {"source": "vandel", "dest": "billund", "length": 7}
+        ]
+    },
+    {
+        "name": "billund",
+        "edges": [
+            {"source": "billund", "dest": "vandel", "length": 7},
+            {"source": "billund", "dest": "vorbasse", "length": 14},
+            {"source": "billund", "dest": "give", "length": 19},
+            {"source": "billund", "dest": "egtved", "length": 19}
+        ]
+    },
+    {
+        "name": "give",
+        "edges": [
+            {"source": "give", "dest": "billund", "length": 19},
+            {"source": "give", "dest": "givskud", "length": 8},
+            {"source": "give", "dest": "gadbjerg", "length": 12}
+        ]
+    },
+    {
+        "name": "givskud",
+        "edges": [
+            {"source": "givskud", "dest": "give", "length": 8},
+            {"source": "give", "dest": "jelling", "length": 8}
+        ]
+    },
+    {
+        "name": "gadbjerg",
+        "edges": [
+            {"source": "gadbjerg", "dest": "give", "length": 12},
+            {"source": "gadbjerg", "dest": "jelling", "length": 8}
+        ]
+    },
+    {
+        "name": "egtved",
+        "edges": [
+            {"source": "egtved", "dest": "billund", "length": 19},
+            {"source": "egtved", "dest": "ødsted", "length": 8},
+            {"source": "egtved", "dest": "kolding", "length": 19}
+        ]
+    },
+    {
+        "name": "jerlev",
+        "edges": [
+            {"source": "jerlev", "dest": "vejle", "length": 8},
+            {"source": "jerlev", "dest": "ødsted", "length": 3}
+        ]
+    },
+    {
+        "name": "ødsted",
+        "edges": [
+            {"source": "ødsted", "dest": "jerlev", "length": 3},
+            {"source": "ødsted", "dest": "egtved", "length": 8},
+            {"source": "ødsted", "dest": "gravens", "length": 9}
+        ]
+    },
+    {
+        "name": "gravens",
+        "edges": [
+            {"source": "gravens", "dest": "ødsted", "length": 9},
+            {"source": "gravens", "dest": "kolding", "length": 15}
+        ]
+    },
+    {
+        "name": "ny-højen",
+        "edges": [
+            {"source": "ny-højen", "dest": "vejle", "length": 7},
+            {"source": "ny-højen", "dest": "viuf", "length": 8}
+        ]
+    },
+    {
+        "name": "viuf",
+        "edges": [
+            {"source": "viuf", "dest": "ny-højen", "length": 8},
+            {"source": "viuf", "dest": "almind", "length": 4}
+        ]
+    },
+    {
+        "name": "almind",
+        "edges": [
+            {"source": "almind", "dest": "viuf", "length": 4},
+            {"source": "almind", "dest": "kolding", "length": 10}
+        ]
+    },
+    {
+        "name": "kolding",
+        "edges": [
+            {"source": "kolding", "dest": "almind", "length": 10},
+            {"source": "kolding", "dest": "gravens", "length": 15},
+            {"source": "kolding", "dest": "egtved", "length": 19},
+            {"source": "kolding", "dest": "vejle", "length": 33}
+        ]
+    },
+    {
+        "name": "vorbasse",
+        "edges": [
+            {"source": "vorbasse", "dest": "billund", "length": 14},
+            {"source": "vorbasse", "dest": "bække", "length": 8}
+        ]
+    },
+    {
+        "name": "bække",
+        "edges": [
+            {"source": "bække", "dest": "vorbasse", "length": 8},
+            {"source": "bække", "dest": "læborg", "length": 10},
+            {"source": "bække", "dest": "gesten", "length": 8}
+        ]
+    },
+    {
+        "name": "læborg",
+        "edges": [
+            {"source": "læborg", "dest": "bække", "length": 10},
+            {"source": "læborg", "dest": "vejen", "length": 6}
+        ]
+    },
+    {
+        "name": "gesten",
+        "edges": [
+            {"source": "gesten", "dest": "vejen", "length": 8},
+            {"source": "gesten", "dest": "bække", "length": 8},
+            {"source": "gesten", "dest": "store-andst", "length": 6}
+        ]
+    },
+    {
+        "name": "vejen",
+        "edges": [
+            {"source": "vejen", "dest": "læborg", "length": 6},
+            {"source": "vejen", "dest": "gesten", "length": 8},
+            {"source": "vejen", "dest": "store-andst", "length": 8},
+            {"source": "vejen", "dest": "kolding", "length": 26}
+        ]
+    },
+    {
+        "name": "store-andst",
+        "edges": [
+            {"source": "store-andst", "dest": "vejen", "length": 8},
+            {"source": "store-andst", "dest": "gesten", "length": 6},
+            {"source": "store-andst", "dest": "lunderskov", "length": 6}
+        ]
+    },
+    {
+        "name": "lunderskov",
+        "edges": [
+            {"source": "lunderskov", "dest": "store-andst", "length": 6},
+            {"source": "lunderskov", "dest": "kolding", "length": 14}
+        ]
+    }
+]
